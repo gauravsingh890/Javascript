@@ -36,3 +36,26 @@ console.log(myFunction);
 
 console.log(typeof(bigNumber));
 console.log(typeof myFunction);
+
+
+// +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// Stack (Primitive values store in stack), Heap (Non-Primitive values store in heap)
+// In stack we get a copy of original value
+let str = "Hello world!"
+let anotherStr = str
+anotherStr = "world Hello!"
+console.log(str);
+console.log(anotherStr);
+
+// In heap we get the direct reference of the original value
+let userOne = {
+    email : "user@google.com",
+    upi   : "user@lbl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hello@google.com"
+console.log(userOne.email);
+console.log(userTwo.email);
