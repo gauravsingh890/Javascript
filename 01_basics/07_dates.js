@@ -43,7 +43,10 @@ console.log(newDate.getDay());      // 1    -> Monday
 console.log(`${newDate.getDay()} and the time `) // to write in specific format
 
 console.log(newDate.toLocaleString('default',{
-    weekday : "long"
+    weekday : "long",
+    year: "numeric",
+    month: "long",
+    day: "numeric"
     // timeZone : 'UTC',
     // hour12 : false
 }));
