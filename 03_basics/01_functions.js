@@ -36,3 +36,35 @@ function loginUserMessage(username) {
 
 console.log(loginUserMessage("john"));  // john just logged in
 console.log(loginUserMessage());    // undefined just logged in
+
+// functions with objects and array
+
+function calculateCartPrice(...num){        // ...num in parameter is rest operator
+    return num
+}
+
+console.log(calculateCartPrice(200,300,400));
+
+const user = {
+    username : "Sam",
+    price    : 9922
+}
+
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+}
+
+handleObject(user)  // Username is Sam and price is 9922
+handleObject({
+    username: "John",   
+    price : 2323
+})          // Username is John and price is 2323
+
+const arr = [100, 500, 600 , 700]
+
+function returnArray(getArray) {
+    return getArray[2]
+}
+
+console.log(returnArray(arr));     //   600
+console.log(returnArray([100,300,500,600,700,900]));       // 500
