@@ -69,3 +69,20 @@ console.log(Object.entries(tinderUser));    // [ [ 'id', '123abc' ], [ 'name', '
 // when loopin an object if the values is not present or is null and the case is not handled properly its chances to crash increases, to solve that issues we use hasOwnProperty()
 console.log(tinderUser.hasOwnProperty('isLoggedIn')); // true
 console.log(tinderUser.hasOwnProperty('isLoggedOut')); // false
+
+
+const course = {
+    name : "js in hindi",
+    price : "999",
+    courseInstructor : "hitesh"
+}
+
+// console.log(course.courseInstructor);    // hitesh
+
+//      Destructuring objects
+const {courseInstructor} = course
+// console.log(courseInstructor);          // hitesh
+
+const {courseInstructor : instructor} = course      //we can use this syntax to change the name 
+console.log(instructor);    //hitesh
+
