@@ -16,5 +16,5 @@
 ### A function execution context is created whenever a function is called, representing the function's local scope
 
 
-==For further read, visit the link==
+== For further read, visit the link ==
 [Execution context](https://www.freecodecamp.org/news/how-javascript-works-behind-the-scene-javascript-execution-context/)
