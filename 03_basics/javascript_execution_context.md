@@ -1,4 +1,4 @@
-# JAVASCRIPT EXECUTION CONTEXT
+# JAVASCRIPT EXECUTION CONTEXT - HOW JS WORKS BEHIND THE SCENES
 
 ### When the Javascript engine scans a script file, it makes an environment called the **EXECUTION CONTEXT** that handles the entire transformation and execution of the code.
 
