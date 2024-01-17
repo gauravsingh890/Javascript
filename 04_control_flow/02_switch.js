@@ -52,3 +52,20 @@ switch (month) {
     console.log("Not a valid month");
     break;
 }
+
+// Note :-> break : is helpful when a condition is met and the code for that case is executed then instead of going to next case and executing it without checking the condition it will exit the control flow of switch
+
+// Note :-> default : this condition is met when there is no other condition got matched
+
+// For string condition
+
+const day = "monday";
+switch (day) {
+  case "mon":
+    console.log(`Day is ${day}`);
+    break;
+
+  default:
+    console.log("!!!No day found!!!");
+    break;
+}
