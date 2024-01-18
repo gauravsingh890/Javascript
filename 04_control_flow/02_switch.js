@@ -59,7 +59,7 @@ switch (month) {
 
 // For string condition
 
-const day = "monday";
+const day = "mon";
 switch (day) {
   case "mon":
     console.log(`Day is ${day}`);
