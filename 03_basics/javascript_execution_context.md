@@ -31,9 +31,13 @@ _During the context runtime, the parser parses the source code and allocates mem
 
 5. When your javascript code is loaded by a web browser or executed by a Javascript runtime environment(like Node.js), the global execution context is initialized.
 
+---
+
 ## FUNCTION EXECUTION CONTEXT
 
 ### A function execution context is created whenever a function is called, representing the function's local scope
+
+---
 
 1. When a function is called, a new execution context is initialized specifically for that function. This context include its own set of local variables, parameters, and a reference to the outer environment whereas the function is defined.
 
