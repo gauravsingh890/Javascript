@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit and Remove Elements in DOM</title>
+  </head>
+  <body style="background-color: black; color: aliceblue">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    // In this method whenever the function get called it will traverse the all dom
+    // trees from start to the place wherever the element is present
+    function addLanguage(langName) {
+      const li = document.createElement("li");
+      li.innerHTML = `${langName}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("Python");
+    addLanguage("java");
+    addLanguage("TypeScript");
+
+    // Optimize way for above function
+    function addOptiLanguage(langName) {
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(langName));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptiLanguage("GO");
+    addOptiLanguage("Dart");
+
+    // EDIT
+    const secondLang = document.querySelector("li:nth-child(2)");
+    secondLang.innerHTML = "Mojo"; // unoptimized edit
+
+    // Optimized Edit
+    const newli = document.createElement("li");
+    newli.textContent = "Rust";
+    secondLang.replaceWith(newli);
+
+    // edit
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>Kotlin</li>";
+
+    // remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+  </script>
+</html>
