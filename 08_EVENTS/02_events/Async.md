@@ -33,7 +33,13 @@ Execute one line of code at a time :-> _Each operation waits for the last line t
 ---
 
 - Memory heap
-- Call stack
+- Call stack :
+  contains:
+  fn
+  fn
+  fn
+  Global
+  : call stack calls web api
 
 ---
 
@@ -45,6 +51,7 @@ Execute one line of code at a time :-> _Each operation waits for the last line t
 - set timeout => Register call back (CB)
 - set interval
 - fetch() => Promise : high priority queue
+  : and adds it to call stack directly
 
 ---
 
@@ -52,6 +59,6 @@ Execute one line of code at a time :-> _Each operation waits for the last line t
 
 ---
 
-_Adds callback to call stack in js engine_
+_Adds registered callback to call stack in js engine_
 
 ---
